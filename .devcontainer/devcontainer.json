@@ -1,0 +1,14 @@
+{
+    "name": "flutter_docker",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "remoteUser": "arnav",
+    // "mounts": ["source=/dev/bus/usb,target=/dev/bus/usb,type=bind"],
+    "settings": {
+      "terminal.integrated.shell.linux": null
+    },
+    "runArgs": ["--privileged"],
+    "extensions": ["dart-code.flutter"],
+    "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/arnav/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/arnav/workspace"
+  }

@@ -24,3 +24,6 @@ RUN git clone https://github.com/flutter/flutter.git
 ENV PATH "$PATH:/home/arnav/flutter/bin"
 
 RUN flutter doctor
+
+WORKDIR "/dino_run"
+RUN flutter pub get
